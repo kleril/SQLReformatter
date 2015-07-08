@@ -4,6 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.TeamFoundation.Client;
+using Microsoft.TeamFoundation.VersionControl.Client;
+using System.IO;
 
 namespace SQLReformatter
 {
@@ -31,5 +34,37 @@ namespace SQLReformatter
             }
             return lines;
         }
+
+		public static void downloadFile()
+		{
+			string teamProjectCollectionUrl = "https://cozumo.visualstudio.com/DefaultCollection";
+			string filePath = "$/InterceptorOpsAndAdmin/Schema.sql";
+
+			// Get the version control server
+			TfsTeamProjectCollection teamProjectCollection = TfsTeamProjectCollectionFactory.GetTeamProjectCollection(new Uri(teamProjectCollectionUrl));
+			VersionControlServer versionControlServer = teamProjectCollection.GetService<VersionControlServer>();
+
+			// Get the latest Item for filePath
+			Item item = versionControlServer.GetItem(filePath, VersionSpec.Latest);
+
+			// Download and display content to console
+			string fileString = string.Empty;
+
+			using (Stream stream = item.DownloadFile())
+			{
+				using (MemoryStream memoryStream = new MemoryStream())
+				{
+					stream.CopyTo(memoryStream);
+
+					// Use StreamReader to read MemoryStream created from byte array
+					using (StreamReader streamReader = new StreamReader(new MemoryStream(memoryStream.ToArray())))
+					{
+						fileString = streamReader.ReadToEnd();
+					}
+				}
+			}
+
+			Console.WriteLine(fileString);
+		}
     }
 }
