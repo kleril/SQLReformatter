@@ -13,7 +13,7 @@ namespace SQLReformatter
         {
             foreach (string nextLine in f)
             {
-                if (nextLine.Equals("GO"))
+                if (nextLine.Equals("GO") || nextLine.Equals("--declare @testString varchar(100)") || nextLine.Equals("--SELECT '*' as item") || nextLine.Equals("--UNION ALL"))
                 {
                     f.Remove(nextLine);
                 }
