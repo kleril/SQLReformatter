@@ -11,7 +11,7 @@ namespace SQLReformatter
     {
         public static void upload(string fileName)
         {
-            string url = Program.downloadUrl;
+            string url = Program.uploadUrl;
             using (WebClient client = new WebClient())
             {
                 try

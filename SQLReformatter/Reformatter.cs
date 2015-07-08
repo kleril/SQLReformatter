@@ -8,8 +8,16 @@ namespace SQLReformatter
 {
     class Reformatter
     {
+        //Tom's magical nonsense
         public static List<String> reformat(List<String> f)
         {
+            foreach (string nextLine in f)
+            {
+                if (nextLine.Equals("GO"))
+                {
+                    f.Remove(nextLine);
+                }
+            }
             return f;
         }
     }
