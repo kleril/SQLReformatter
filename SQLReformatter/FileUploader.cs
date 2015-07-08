@@ -9,12 +9,19 @@ namespace SQLReformatter
 {
     class FileUploader
     {
-        public static void upload(List<String> f)
+        public static void upload(string fileName)
         {
             string url = Program.downloadUrl;
             using (WebClient client = new WebClient())
             {
-                client.UploadFile(url, fileName);
+                try
+                {
+                    client.UploadFile(url, fileName);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
             }
         }
     }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace SQLReformatter
     class Program
     {
         private static List<String> oldFile;
+        private static string outputFile = Directory.GetCurrentDirectory();
         static void Main(string[] args)
         {
             initGlobals();
@@ -23,12 +25,17 @@ namespace SQLReformatter
                 Console.WriteLine(e.ToString());
             }
             var newFile = Reformatter.reformat(oldFile);
-            FileUploader.upload(newFile);
+            Console.WriteLine(outputFile);
+
+            System.IO.File.WriteAllLines(outputFile, newFile);
+
+            FileUploader.upload(outputFile);
             Console.ReadLine();
         }
 
         public static string downloadUrl;
         public static string uploadUrl;
+        private static string newFileName;
 
         private static void initGlobals()
         {
@@ -36,6 +43,8 @@ namespace SQLReformatter
             {
                 downloadUrl = ConfigurationManager.ConnectionStrings["downloadUrl"].ConnectionString;
                 uploadUrl = ConfigurationManager.ConnectionStrings["uploadUrl"].ConnectionString;
+                newFileName = ConfigurationManager.ConnectionStrings["newFileName"].ConnectionString;
+                outputFile = outputFile + "\\" +  newFileName;
             }
             catch (Exception e)
             {
