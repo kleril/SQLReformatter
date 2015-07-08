@@ -11,7 +11,7 @@ namespace SQLReformatter
     {
         public static List<String> download()
         {
-            var url = "http://www.zombo.com";
+            string url = Program.downloadUrl;
             List<String> lines = new List<String>();
             using (WebClient client = new WebClient())
             {
