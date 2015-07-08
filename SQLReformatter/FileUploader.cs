@@ -8,7 +8,7 @@ namespace SQLReformatter
 {
     class FileUploader
     {
-        public static upload(File f)
+        public static void upload(List<String> f)
         {
 
         }

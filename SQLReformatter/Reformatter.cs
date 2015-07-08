@@ -8,9 +8,9 @@ namespace SQLReformatter
 {
     class Reformatter
     {
-        public static reformat(File f)
+        public static List<String> reformat(List<String> f)
         {
-
+            return f;
         }
     }
 }
