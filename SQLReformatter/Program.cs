@@ -32,7 +32,7 @@ namespace SQLReformatter
             FileUploader.upload(outputFile);
             Console.ReadLine();
 
-			FileDownloader.downloadFile ();
+			FileDownloader.downloadFileFromTFS ();
 
         }
 

@@ -16,7 +16,7 @@ namespace SQLReformatter
         {
             string url = Program.downloadUrl;
 
-			string file = "Test.cs";
+			string file = "/Test.cs";
 			string filePath = "../../Test.cs";
 
             List<String> lines = new List<String>();
@@ -35,10 +35,10 @@ namespace SQLReformatter
             return lines;
         }
 
-		public static void downloadFile()
+		public static void downloadFileFromTFS()
 		{
-			string teamProjectCollectionUrl = "https://github.com/lynneeai";
-			string filePath = "$/CampaignManagerTester/tree/master/CampaignManagerTester/InterceptorTester/Test.cs";
+			string teamProjectCollectionUrl = Program.downloadUrl;
+			string filePath = "/Test.cs";
 
 			// Get the version control server
 			TfsTeamProjectCollection teamProjectCollection = TfsTeamProjectCollectionFactory.GetTeamProjectCollection(new Uri(teamProjectCollectionUrl));
