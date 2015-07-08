@@ -37,8 +37,8 @@ namespace SQLReformatter
 
 		public static void downloadFile()
 		{
-			string teamProjectCollectionUrl = "https://cozumo.visualstudio.com/DefaultCollection";
-			string filePath = "$/InterceptorOpsAndAdmin/Schema.sql";
+			string teamProjectCollectionUrl = "https://github.com/lynneeai";
+			string filePath = "$/CampaignManagerTester/tree/master/CampaignManagerTester/InterceptorTester/Test.cs";
 
 			// Get the version control server
 			TfsTeamProjectCollection teamProjectCollection = TfsTeamProjectCollectionFactory.GetTeamProjectCollection(new Uri(teamProjectCollectionUrl));

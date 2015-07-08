@@ -40,20 +40,38 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.TeamFoundation">
-      <HintPath>..\packages\Machado.Microsoft.TeamFoundation.12.0.0.0\lib\net20\Microsoft.TeamFoundation.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.TeamFoundation.Discussion.Client">
       <HintPath>..\packages\Machado.Microsoft.TeamFoundation.Client.12.0.0.5\lib\net20\Microsoft.TeamFoundation.Discussion.Client.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.TeamFoundation.VersionControl.Client">
       <HintPath>..\packages\Machado.Microsoft.TeamFoundation.Client.12.0.0.5\lib\net20\Microsoft.TeamFoundation.VersionControl.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Client">
-      <HintPath>..\packages\Machado.Microsoft.TeamFoundation.Client.12.0.0.5\lib\net20\Microsoft.TeamFoundation.WorkItemTracking.Client.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Common">
       <HintPath>..\packages\Machado.Microsoft.TeamFoundation.Client.12.0.0.5\lib\net20\Microsoft.TeamFoundation.WorkItemTracking.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TeamFoundation.Controls">
+      <HintPath>..\packages\Microsoft.TeamFoundation.11.0.0.0\lib\net45\Microsoft.TeamFoundation.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TeamFoundation.DeleteTeamProject">
+      <HintPath>..\packages\Microsoft.TeamFoundation.11.0.0.0\lib\net45\Microsoft.TeamFoundation.DeleteTeamProject.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TeamFoundation.ProjectManagement">
+      <HintPath>..\packages\Microsoft.TeamFoundation.11.0.0.0\lib\net45\Microsoft.TeamFoundation.ProjectManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TeamFoundation.VersionControl.Controls.Common">
+      <HintPath>..\packages\Microsoft.TeamFoundation.11.0.0.0\lib\net45\Microsoft.TeamFoundation.VersionControl.Controls.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Controls">
+      <HintPath>..\packages\Microsoft.TeamFoundation.11.0.0.0\lib\net45\Microsoft.TeamFoundation.WorkItemTracking.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.ControlsCore">
+      <HintPath>..\packages\Microsoft.TeamFoundation.11.0.0.0\lib\net45\Microsoft.TeamFoundation.WorkItemTracking.ControlsCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TeamFoundation">
+      <HintPath>..\packages\TeamFoundation.11.11.0.50727.1\lib\Microsoft.TeamFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Client">
+      <HintPath>..\packages\TeamFoundation.11.11.0.50727.1\lib\Microsoft.TeamFoundation.WorkItemTracking.Client.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.TeamFoundation.Common">
       <HintPath>..\packages\nuget-bot.Microsoft.TeamFoundation.Common.12.0.30501.1\lib\net45\Microsoft.TeamFoundation.Common.dll</HintPath>
