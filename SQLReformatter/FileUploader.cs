@@ -53,19 +53,8 @@ namespace SQLReformatter
                 Console.WriteLine(e.ToString());
             }
         }
-        /*
-		public static void uploadToGitHub(string filePath)
-		{
-			string authToken;
-			string owner;
-			string repo;
-			var service = new ContentService (authToken);
-			var file = new DiskFile (filePath);
-			var target = new FileTarget(owner, repo, file.Name);
+        
 
-			service.PushFile(file, target, "pushing file via GitHubPushLib");
-		}
-        */
 		public static void uploadFileToTFS()
 		{
 			string uploadUrl = Program.uploadUrl;

@@ -106,9 +106,6 @@
     <Reference Include="Microsoft.TeamFoundation.Client">
       <HintPath>..\packages\nuget-bot.Microsoft.TeamFoundation.Client.12.0.21005.3\lib\net45\Microsoft.TeamFoundation.Client.dll</HintPath>
     </Reference>
-    <Reference Include="GitHubPushLib">
-      <HintPath>..\packages\GitHubPushLib.0.1.0\lib\net4\GitHubPushLib.dll</HintPath>
-    </Reference>
     <Reference Include="Tamir.SharpSSH">
       <HintPath>..\packages\Tamir.SharpSSH.1.1.1.13\lib\Tamir.SharpSSH.dll</HintPath>
     </Reference>
