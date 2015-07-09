@@ -88,6 +88,30 @@
     <Reference Include="Microsoft.TeamFoundation.Client">
       <HintPath>..\packages\nuget-bot.Microsoft.TeamFoundation.Client.12.0.21005.3\lib\net45\Microsoft.TeamFoundation.Client.dll</HintPath>
     </Reference>
+    <Reference Include="GitHubPushLib">
+      <HintPath>..\packages\GitHubPushLib.0.1.0\lib\net4\GitHubPushLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGit.UI">
+      <HintPath>..\packages\SharpGit-x64.0.2203.1088.185\lib\net40\SharpGit.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGit">
+      <HintPath>..\packages\SharpGit-x86.0.2203.1088.185\lib\net40\SharpGit.dll</HintPath>
+    </Reference>
+    <Reference Include="Tamir.SharpSSH">
+      <HintPath>..\packages\Tamir.SharpSSH.1.1.1.13\lib\Tamir.SharpSSH.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Winterdom.IO.FileMap">
+      <HintPath>..\packages\Winterdom.IO.FileMap.2.0.2.0\lib\Winterdom.IO.FileMap.dll</HintPath>
+    </Reference>
+    <Reference Include="GitSharp.Core">
+      <HintPath>..\packages\GitSharp.0.3\lib\GitSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GitSharp">
+      <HintPath>..\packages\GitSharp.0.3\lib\GitSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FileDownloader.cs" />

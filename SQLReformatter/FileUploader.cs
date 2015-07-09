@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Microsoft.TeamFoundation.Client;
 using Microsoft.TeamFoundation.VersionControl.Client;
 using System.IO;
+using GitHubPushLib;
 
 namespace SQLReformatter
 {
@@ -31,33 +32,6 @@ namespace SQLReformatter
             }
         }
 
-        public static SecureString getPassword()
-        {
-            SecureString pwd = new SecureString();
-            while (true)
-            {
-                ConsoleKeyInfo i = Console.ReadKey(true);
-                if (i.Key == ConsoleKey.Enter)
-                {
-                    break;
-                }
-                else if (i.Key == ConsoleKey.Backspace)
-                {
-                    if (pwd.Length > 0)
-                    {
-                        pwd.RemoveAt(pwd.Length - 1);
-                        Console.Write("\b \b");
-                    }
-                }
-                else
-                {
-                    pwd.AppendChar(i.KeyChar);
-                    Console.Write("*");
-                }
-            }
-            return pwd;
-        }
-
         public static void uploadFileToGit(string fileName)
         {
             Console.Write("Github Username:");
@@ -72,6 +46,18 @@ namespace SQLReformatter
 
             service.PushFile(file, target, "pushing file via GitHubPushLib");
         }
+
+		public static void uploadToGitHub(string filePath)
+		{
+			string authToken;
+			string owner;
+			string repo;
+			var service = new ContentService (authToken);
+			var file = new DiskFile (filePath);
+			var target = new FileTarget(owner, repo, file.Name);
+
+			service.PushFile(file, target, "pushing file via GitHubPushLib");
+		}
 
 		public static void uploadFileToTFS()
 		{
@@ -152,6 +138,6 @@ namespace SQLReformatter
 				}
 			}
 		}
-			
+		*/	
 	}
 }
