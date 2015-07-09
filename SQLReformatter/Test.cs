@@ -34,7 +34,7 @@
 
         <meta name="google-analytics" content="UA-3769691-2">
 
-    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="480F34B9:3107:CDE6BBF:559EBB92" name="octolytics-dimension-request_id" />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="480F34B9:506E:CC99C7E:559EC287" name="octolytics-dimension-request_id" />
     
     <meta content="Rails, view, blob#show" data-pjax-transient="true" name="analytics-event" />
     <meta class="js-ga-set" name="dimension1" content="Logged Out">
@@ -48,7 +48,7 @@
 
 
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="+WpkiBEtsWlN3Hr4tlD9Xj0ncjlDHcnlPou2ewRBu8R5V/o8KKDLMB7WIpwvhY3eyO26tP1DEs8zYIUlZl2UzQ==" name="csrf-token" />
+<meta content="YtiTfwjrA6zhl8wIlUDMqe0nrb3QZFFs7tCiodKhmEVbhVAvNDoRnL86ABNR1yJJeqZchkjhpeNesnuAgm80aQ==" name="csrf-token" />
 
     <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-507b4f74c65565efec0273ea4338465df92b14c967ae71c2bda03dd97946b558.css" media="all" rel="stylesheet" />
     <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-2fbdf789628902fbbde900bfd0bfac0a84ff4cb621212947ebd095670a064df1.css" media="all" rel="stylesheet" />
@@ -271,7 +271,7 @@
 
 
 <div class="clone-options">You can clone with
-  <form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="D/sDxejsU+lqfwnEPV2DzJNUrJUI5MdksvS/F9nbMqDkB5xsc+X5QxM/18bCMUI2CvYM9YlFG7XmQa/kHd1clA==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="s3+LrVY1Ipq7Oq9rarsOYF6HQ+SPHOnQQtB/kv4cbQ6ziLq5kGiybfqIceM+JfX3kYK4nOlrOG2QHlLX+TpCTw==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+  <form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="bnVGLWYqKtdMPFmsdcCidYwE+seuYOujD0r7XGKR0IgSNFYy+IMdx7Ja0wTQqpyJ+w3ZoE+H1JuuHCUyTdrRnw==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="0BPD6ouSjGD5aW20PqVdt3Nfw/t9vWQ6ksNo9jIC254C6rsrq6SwZgBKVn9RKRK7XSosCpU52q0gmXz9cMntAg==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
   <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
     <span class="octicon octicon-question"></span>
   </a>
@@ -880,7 +880,7 @@
       <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
 </a>
     <ul class="site-footer-links">
-      <li>&copy; 2015 <span title="0.03989s from github-fe128-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2015 <span title="0.05421s from github-fe132-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>

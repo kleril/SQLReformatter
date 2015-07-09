@@ -35,9 +35,6 @@ namespace SQLReformatter
 
             FileUploader.uploadFileToGit(outputFile);
             Console.ReadLine();
-
-			FileDownloader.downloadFileFromTFS ();
-
         }
 
         public static string downloadUrl;

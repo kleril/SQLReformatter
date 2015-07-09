@@ -44,9 +44,16 @@ namespace SQLReformatter
             var file = new DiskFile(fileName);
             var target = new FileTarget(user, repo, file.Name);
 
-            service.PushFile(file, target, "pushing file via GitHubPushLib");
+            try
+            {
+                service.PushFile(file, target, "pushing file via GitHubPushLib");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
         }
-
+        /*
 		public static void uploadToGitHub(string filePath)
 		{
 			string authToken;
@@ -58,7 +65,7 @@ namespace SQLReformatter
 
 			service.PushFile(file, target, "pushing file via GitHubPushLib");
 		}
-
+        */
 		public static void uploadFileToTFS()
 		{
 			string uploadUrl = Program.uploadUrl;
@@ -138,6 +145,5 @@ namespace SQLReformatter
 				}
 			}
 		}
-		*/	
 	}
 }
