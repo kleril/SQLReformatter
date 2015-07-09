@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.TeamFoundation.Client;
 using Microsoft.TeamFoundation.VersionControl.Client;
 using System.IO;
+using GitSharp.Commands;
 
 namespace SQLReformatter
 {
@@ -35,6 +36,12 @@ namespace SQLReformatter
             return lines;
         }
 
+		public static void downloadFromGitHub()
+		{
+			
+		}
+
+		/*
 		public static void downloadFileFromTFS()
 		{
 			string teamProjectCollectionUrl = Program.downloadUrl;
@@ -66,5 +73,6 @@ namespace SQLReformatter
 
 			Console.WriteLine(fileString);
 		}
+		*/
     }
 }

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.TeamFoundation.Client;
 using Microsoft.TeamFoundation.VersionControl.Client;
 using System.IO;
+using GitHubPushLib;
 
 namespace SQLReformatter
 {
@@ -28,7 +29,20 @@ namespace SQLReformatter
             }
         }
 
+		public static void uploadToGitHub(string filePath)
+		{
+			string authToken;
+			string owner;
+			string repo;
+			var service = new ContentService (authToken);
+			var file = new DiskFile (filePath);
+			var target = new FileTarget(owner, repo, file.Name);
 
+			service.PushFile(file, target, "pushing file via GitHubPushLib");
+		}
+
+
+		/*
 		public static void uploadFileToTFS()
 		{
 			string uploadUrl = Program.uploadUrl;
@@ -108,6 +122,6 @@ namespace SQLReformatter
 				}
 			}
 		}
-			
+		*/	
 	}
 }
