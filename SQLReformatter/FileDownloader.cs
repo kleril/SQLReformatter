@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 using Microsoft.TeamFoundation.Client;
 using Microsoft.TeamFoundation.VersionControl.Client;
 using System.IO;
-using GitSharp.Commands;
+using GitSharp;
+
 
 namespace SQLReformatter
 {
@@ -36,9 +37,10 @@ namespace SQLReformatter
             return lines;
         }
 
-		public static void downloadFromGitHub()
+		public static void cloneRepoFromGitHub()
 		{
-			
+			string localFilePath;
+			Git.Clone(Program.downloadUrl, localFilePath);
 		}
 
 		/*
