@@ -34,9 +34,9 @@
 
         <meta name="google-analytics" content="UA-3769691-2">
 
-    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="480F34B9:751E:65822A5:559D891C" name="octolytics-dimension-request_id" />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="480F34B9:3107:CDE6BBF:559EBB92" name="octolytics-dimension-request_id" />
     
-    <meta content="Rails, view, blob#show" name="analytics-event" />
+    <meta content="Rails, view, blob#show" data-pjax-transient="true" name="analytics-event" />
     <meta class="js-ga-set" name="dimension1" content="Logged Out">
     <meta name="is-dotcom" content="true">
       <meta name="hostname" content="github.com">
@@ -48,15 +48,15 @@
 
 
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="/sqK1lJlABYXWNebyrHUsaWlScbDOpg4hosKi0WnE8+dhxqGtWlCA5COANl+74Hf+KDpAbdfUSp7BuCJu3u5vw==" name="csrf-token" />
+<meta content="+WpkiBEtsWlN3Hr4tlD9Xj0ncjlDHcnlPou2ewRBu8R5V/o8KKDLMB7WIpwvhY3eyO26tP1DEs8zYIUlZl2UzQ==" name="csrf-token" />
 
     <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-507b4f74c65565efec0273ea4338465df92b14c967ae71c2bda03dd97946b558.css" media="all" rel="stylesheet" />
-    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-cc783bc128bbfd5d8ff80ccbb214b11c0ea7c0317a4643167906abe3ec25dac6.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-2fbdf789628902fbbde900bfd0bfac0a84ff4cb621212947ebd095670a064df1.css" media="all" rel="stylesheet" />
     
     
 
 
-    <meta http-equiv="x-pjax-version" content="26bd0557653f0b4777c28a2d4cfc74a5">
+    <meta http-equiv="x-pjax-version" content="3feacda906686acff0244b0efc134708">
 
       
   <meta name="description" content="Contribute to CampaignManagerTester development by creating an account on GitHub.">
@@ -271,7 +271,7 @@
 
 
 <div class="clone-options">You can clone with
-  <form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="saByQXjky5sIeEPVV8ZrxlWcOseCU89XshWFojH6UrPSSjmOmSISZwE/1QxWiKxcwrOi5B6csUJfybcX+LOF3Q==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="fZroe/3i6pY/cRjMu/BtSGhzkCnvDvHZAm1n2R/LuCACoV/zSwYuOUK0opNI5rkgLU3fDJPKR4PawttMAY9lQA==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+  <form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="D/sDxejsU+lqfwnEPV2DzJNUrJUI5MdksvS/F9nbMqDkB5xsc+X5QxM/18bCMUI2CvYM9YlFG7XmQa/kHd1clA==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="s3+LrVY1Ipq7Oq9rarsOYF6HQ+SPHOnQQtB/kv4cbQ6ziLq5kGiybfqIceM+JfX3kYK4nOlrOG2QHlLX+TpCTw==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
   <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
     <span class="octicon octicon-question"></span>
   </a>
@@ -880,7 +880,7 @@
       <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
 </a>
     <ul class="site-footer-links">
-      <li>&copy; 2015 <span title="0.03844s from github-fe131-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2015 <span title="0.03989s from github-fe128-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
@@ -923,7 +923,7 @@
 
 
       <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-3241a40a58a82e21daef3dd3cdca01bde189158793c1b6f9193fff2b5293cd1d.js"></script>
-      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-60b249427d9766f9f7c2ce367b03a9ed485faded0f6ebc2be69b8442d789d8db.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-2860f5c9bedf7b1ad14ca816dcba7fdbeea0bad143ba637132a6d4db66cd1335.js"></script>
       
       
   </body>

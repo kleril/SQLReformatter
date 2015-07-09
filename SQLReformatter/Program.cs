@@ -10,6 +10,10 @@ namespace SQLReformatter
 {
     class Program
     {
+        private static readonly string TOKEN_KEY = "GHPL_TOKEN";
+        public static readonly string REPO_KEY = "GHPL_REPO";
+        public static string token;
+
         private static List<String> oldFile;
         private static string outputFile = Directory.GetCurrentDirectory();
         static void Main(string[] args)
@@ -29,7 +33,7 @@ namespace SQLReformatter
 
             System.IO.File.WriteAllLines(outputFile, newFile);
 
-            FileUploader.upload(outputFile);
+            FileUploader.uploadFileToGit(outputFile);
             Console.ReadLine();
 
 			FileDownloader.downloadFileFromTFS ();
@@ -42,6 +46,11 @@ namespace SQLReformatter
 
         private static void initGlobals()
         {
+            token = Environment.GetEnvironmentVariable(
+                    TOKEN_KEY,
+                    EnvironmentVariableTarget.User
+                );
+
             try
             {
                 downloadUrl = ConfigurationManager.ConnectionStrings["downloadUrl"].ConnectionString;
