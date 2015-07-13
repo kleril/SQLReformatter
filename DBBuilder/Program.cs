@@ -22,12 +22,7 @@ namespace DBBuilder
             try
             {
                 //Connect to a remote instance of SQL Server.
-		SecureString ss = new SecureString();
-                var ca = "Ecru9278Fudge".ToCharArray();
-                foreach (char n in ca)
-                {
-                    ss.AppendChar(n);
-                }
+                SecureString ss = readPassword();
                 ss.MakeReadOnly();
                 SqlCredential creds = new SqlCredential("CozDev01_DBA!Us3rAcc0unt@zypnl8g76k", ss);
 
@@ -61,6 +56,36 @@ namespace DBBuilder
                 Console.WriteLine(e.ToString());
             }
             Console.ReadLine();
+        }
+
+
+        public static SecureString readPassword()
+        {
+            Console.Write("Enter SQL Server Password:");
+            SecureString pwd = new SecureString();
+            while (true)
+            {
+                ConsoleKeyInfo i = Console.ReadKey(true);
+                if (i.Key == ConsoleKey.Enter)
+                {
+                    break;
+                }
+                else if (i.Key == ConsoleKey.Backspace)
+                {
+                    if (pwd.Length > 0)
+                    {
+                        pwd.RemoveAt(pwd.Length - 1);
+                        Console.Write("\b \b");
+                    }
+                }
+                else
+                {
+                    pwd.AppendChar(i.KeyChar);
+                    Console.Write("*");
+                }
+            }
+            Console.WriteLine();
+            return pwd;
         }
     }
 }
