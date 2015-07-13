@@ -1,12 +1,11 @@
 ﻿using System;
-using Microsoft.SqlServer.Management.Common;
-using Microsoft.SqlServer.Management.Smo;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Data;
 using System.Data.Entity;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
@@ -22,14 +21,24 @@ namespace DBBuilder
 			try
             {
                 //Connect to a remote instance of SQL Server.
-                SqlCredential creds = new SqlCredential(, "CozDev01_DBA!Us3rAcc0unt@zypnl8g76k", "Ecru9278Fudge");
+                SecureString ss = new SecureString();
+                var ca = "Ecru9278Fudge".ToCharArray();
+                foreach (char n in ca)
+                {
+                    ss.AppendChar(n);
+                }
+                SqlCredential creds = new SqlCredential("CozDev01_DBA!Us3rAcc0unt@zypnl8g76k", ss);
 
                 SqlConnection connection = new SqlConnection("tcpid:zypnl8g76k.database.windows.net", creds);
+                SqlCommand command = connection.CreateCommand();
 
                 //Create new DB
                 string dbName = "TestDb";
 
-                var scriptRan = ScriptExecutor.executeScript(connection, dbName);
+                command.CommandText = "CREATE DATABASE " + dbName;
+                command.ExecuteNonQuery();
+
+                var scriptRan = ScriptExecutor.executeScript(command, dbName);
                 if (scriptRan)
                 {
                     Console.WriteLine("It worked!");
@@ -38,7 +47,6 @@ namespace DBBuilder
                 {
                     Console.WriteLine("It didn't work");
                 }
-                db.Drop();
             }
             catch (Exception e)
             {
