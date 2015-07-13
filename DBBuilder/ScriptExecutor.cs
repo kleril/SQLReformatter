@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace DBBuilder
 {
@@ -14,7 +15,7 @@ namespace DBBuilder
     {
         private static string path = ConfigurationManager.ConnectionStrings["scriptFilePath"].ConnectionString;
         //Take script from file, execute on server.
-        public static bool executeScript(SqlConnection string db)
+        public static bool executeScript(SqlConnection db)
         {
             List<string> queries = new List<string>();
             string builder = "";

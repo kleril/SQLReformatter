@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -141,8 +141,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-<<<<<<< Updated upstream
-=======
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="Microsoft.SqlServer.ConnectionInfo">
       <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
     </Reference>
@@ -164,9 +163,8 @@
     <Reference Include="Microsoft.SqlServer.SqlEnum">
       <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.SqlEnum.dll</HintPath>
     </Reference>
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Windows.Forms" />
->>>>>>> Stashed changes
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />

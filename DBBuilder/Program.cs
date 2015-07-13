@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Collections;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Security;
 
 namespace DBBuilder
 {
@@ -22,7 +23,7 @@ namespace DBBuilder
 			try
             {
                 //Connect to a remote instance of SQL Server.
-                SqlCredential creds = new SqlCredential(, "CozDev01_DBA!Us3rAcc0unt@zypnl8g76k", "Ecru9278Fudge");
+				SqlCredential creds = new SqlCredential("CozDev01_DBA!Us3rAcc0unt@zypnl8g76k", new SecureString("Ecru9278Fudge", 13));
 
                 SqlConnection connection = new SqlConnection("tcpid:zypnl8g76k.database.windows.net", creds);
 
