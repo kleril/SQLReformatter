@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{77570B
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBBuilder", "DBBuilder\DBBuilder.csproj", "{1ABE9F82-311C-4F1E-95B2-0B81FC507E16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{43D32ED4-D672-4AF4-82C5-BCC04885EF08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43D32ED4-D672-4AF4-82C5-BCC04885EF08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43D32ED4-D672-4AF4-82C5-BCC04885EF08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ABE9F82-311C-4F1E-95B2-0B81FC507E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ABE9F82-311C-4F1E-95B2-0B81FC507E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ABE9F82-311C-4F1E-95B2-0B81FC507E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ABE9F82-311C-4F1E-95B2-0B81FC507E16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

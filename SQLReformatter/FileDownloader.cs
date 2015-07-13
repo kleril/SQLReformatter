@@ -40,7 +40,7 @@ namespace SQLReformatter
 		public static void cloneRepoFromGitHub()
 		{
 			string localFilePath;
-			Git.Clone(Program.downloadUrl, localFilePath);
+			//Git.Clone(Program.downloadUrl, localFilePath);
 		}
 
 		/*
