@@ -44,12 +44,13 @@ namespace DBBuilder
                     command.CommandText = nextQuery;
                     command.ExecuteNonQuery();
                 }
+                return true;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
+                return false;
             }
-            return true;
         }
     }
 }

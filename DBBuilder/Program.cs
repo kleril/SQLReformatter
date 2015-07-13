@@ -9,16 +9,16 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
-using System.Data.SqlClient;
-using System.Windows.Forms;
 
 namespace DBBuilder
 {
     class Program
     {
+        private static SqlConnection connection;
+
         static void Main(string[] args)
         {
-			try
+            try
             {
                 //Connect to a remote instance of SQL Server.
                 SecureString ss = new SecureString();
@@ -27,9 +27,11 @@ namespace DBBuilder
                 {
                     ss.AppendChar(n);
                 }
+                ss.MakeReadOnly();
                 SqlCredential creds = new SqlCredential("CozDev01_DBA!Us3rAcc0unt@zypnl8g76k", ss);
 
-                SqlConnection connection = new SqlConnection("tcpid:zypnl8g76k.database.windows.net", creds);
+                connection = new SqlConnection("Server=zypnl8g76k.database.windows.net;database=master", creds);
+                connection.Open();
                 SqlCommand command = connection.CreateCommand();
 
                 //Create new DB
@@ -47,14 +49,17 @@ namespace DBBuilder
                 {
                     Console.WriteLine("It didn't work");
                 }
+                connection.Close();
             }
             catch (Exception e)
             {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
                 Console.WriteLine(e.ToString());
             }
-            //The connection is automatically disconnected when the Server variable goes out of scope
             Console.ReadLine();
-
         }
     }
 }
