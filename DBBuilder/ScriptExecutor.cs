@@ -12,13 +12,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 
-
 namespace DBBuilder
 {
     class ScriptExecutor
     {
         private static string path = ConfigurationManager.ConnectionStrings["scriptFilePath"].ConnectionString;
         //Take script from file, execute on server.
+
         public static bool executeScript(SqlCommand command, string dbName)
         {
             List<string> queries = new List<string>();

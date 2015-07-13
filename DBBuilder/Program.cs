@@ -9,6 +9,7 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
+using System.Windows.Forms;
 
 namespace DBBuilder
 {
@@ -21,7 +22,7 @@ namespace DBBuilder
             try
             {
                 //Connect to a remote instance of SQL Server.
-                SecureString ss = new SecureString();
+		SecureString ss = new SecureString();
                 var ca = "Ecru9278Fudge".ToCharArray();
                 foreach (char n in ca)
                 {
