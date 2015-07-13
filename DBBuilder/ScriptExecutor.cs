@@ -1,13 +1,16 @@
-﻿using Microsoft.SqlServer.Management.Common;
-using Microsoft.SqlServer.Management.Smo;
-using System;
-using System.Configuration;
+﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Configuration;
+using System.Data;
+using System.Data.Entity;
+using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
+using System.Collections;
 
 namespace DBBuilder
 {
@@ -15,7 +18,8 @@ namespace DBBuilder
     {
         private static string path = ConfigurationManager.ConnectionStrings["scriptFilePath"].ConnectionString;
         //Take script from file, execute on server.
-        public static bool executeScript(SqlConnection db)
+
+        public static bool executeScript(SqlCommand command, string dbName)
         {
             List<string> queries = new List<string>();
             string builder = "";
@@ -37,7 +41,8 @@ namespace DBBuilder
                 }
                 foreach (string nextQuery in queries)
                 {
-                    db.ExecuteNonQuery(nextQuery);
+                    command.CommandText = nextQuery;
+                    command.ExecuteNonQuery();
                 }
             }
             catch (Exception e)
