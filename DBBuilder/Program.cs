@@ -4,6 +4,8 @@ using Microsoft.SqlServer.Management.Smo;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Data;
+using System.Data.Entity;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,20 +19,15 @@ namespace DBBuilder
         {
             try
             {
-                //Connect to a remote instance of SQL Server. 
-                Server srv;
-                ServerConnection connection = new ServerConnection("tcp:zypnl8g76k.database.windows.net", "CozDev01_DBA!Us3rAcc0unt@zypnl8g76k", "Ecru9278Fudge");
+                //Connect to a remote instance of SQL Server.
+                SqlCredential creds = new SqlCredential(, "CozDev01_DBA!Us3rAcc0unt@zypnl8g76k", "Ecru9278Fudge");
 
-                //The strServer string variable contains the name of a remote instance of SQL Server. 
-                srv = new Server(connection);
-                //The actual connection is made when a property is retrieved. 
-                Console.WriteLine("Version");
-                Console.WriteLine(srv.Information.Version);
-                //Define a Database object variable by supplying the parent server and the database name arguments in the constructor. 
-                Database db;
-                db = new Database(srv, "Test_SMO_Database " + DateTime.Now.ToShortTimeString());
-                db.Create();
-                var scriptRan = ScriptExecutor.executeScript(db);
+                SqlConnection connection = new SqlConnection("tcpid:zypnl8g76k.database.windows.net", creds);
+
+                //Create new DB
+                string dbName = "TestDb";
+
+                var scriptRan = ScriptExecutor.executeScript(connection, dbName);
                 if (scriptRan)
                 {
                     Console.WriteLine("It worked!");

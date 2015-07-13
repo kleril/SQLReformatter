@@ -53,7 +53,7 @@ namespace SQLReformatter
                 downloadUrl = ConfigurationManager.ConnectionStrings["downloadUrl"].ConnectionString;
                 uploadUrl = ConfigurationManager.ConnectionStrings["uploadUrl"].ConnectionString;
                 newFileName = ConfigurationManager.ConnectionStrings["newFileName"].ConnectionString;
-                outputFile = outputFile + "\\" +  newFileName;
+                outputFile = outputFile + "\\" + newFileName;
             }
             catch (Exception e)
             {

@@ -14,7 +14,7 @@ namespace DBBuilder
     {
         private static string path = ConfigurationManager.ConnectionStrings["scriptFilePath"].ConnectionString;
         //Take script from file, execute on server.
-        public static bool executeScript(Database db)
+        public static bool executeScript(SqlConnection string db)
         {
             List<string> queries = new List<string>();
             string builder = "";
