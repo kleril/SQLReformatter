@@ -30,37 +30,15 @@ namespace DBBuilder
                 Database db;
                 db = new Database(srv, "Test_SMO_Database " + DateTime.Now.ToShortTimeString());
                 db.Create();
-                var makeTableQuery = @"CREATE TABLE testTable(
-                                    [OrgId] [int] NULL,
-                                    [TimeStamp] [datetimeoffset](7) NULL,
-                                    [AlertId] [varchar](6) NULL,
-                                    [AlertData] [varchar](64) NULL,
-                                    [Id] [int] IDENTITY(1,1) NOT NULL,
-                             CONSTRAINT [PK_tblAlerts] PRIMARY KEY CLUSTERED 
-                                (
-                                [Id] ASC
-                                )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
-                            )
-                    ";
-
-                db.ExecuteNonQuery(makeTableQuery);
-
-                var addToTableQuery = @"INSERT INTO testTable
-                                        VALUES ('194387',
-                                        '2007-05-08 12:35:29.1234567 +12:15',
-                                        'alrtid',
-                                        'oieanhireugbg'
-                                        )";
-
-                db.ExecuteNonQuery(addToTableQuery);
-
-                var dbs = srv.Databases;
-                Console.WriteLine("Databases:");
-                foreach (Database next in dbs)
+                var scriptRan = ScriptExecutor.executeScript(db);
+                if (scriptRan)
                 {
-                    Console.WriteLine(next.Name);
+                    Console.WriteLine("It worked!");
                 }
-
+                else
+                {
+                    Console.WriteLine("It didn't work");
+                }
                 db.Drop();
             }
             catch (Exception e)
