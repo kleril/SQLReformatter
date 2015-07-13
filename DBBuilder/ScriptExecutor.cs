@@ -15,7 +15,7 @@ namespace DBBuilder
 {
 	class ScriptExecutor
 	{
-		private static string path = "out.txt";
+		private static string path = ConfigurationManager.ConnectionStrings["ScriptFilePath"].ConnectionString;
 		//Take script from file, execute on server.
 
 		public static bool executeScript(SqlCommand command, string dbName)
