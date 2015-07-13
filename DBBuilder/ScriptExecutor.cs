@@ -25,7 +25,8 @@ namespace DBBuilder
             string builder = "";
             try
             {
-                StreamReader reader = new StreamReader(path);
+                FileStream fs = File.OpenRead(path);
+                StreamReader reader = new StreamReader(fs);
                 while (!reader.EndOfStream)
                 {
                     string nextLine = reader.ReadLine();

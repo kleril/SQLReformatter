@@ -38,8 +38,8 @@ namespace DBBuilder
                 //Create new DB
                 string dbName = "TestDb";
 
-                command.CommandText = "CREATE DATABASE " + dbName;
-                command.ExecuteNonQuery();
+                //command.CommandText = "CREATE DATABASE " + dbName;
+                //command.ExecuteNonQuery();
 
                 var scriptRan = ScriptExecutor.executeScript(command, dbName);
                 if (scriptRan)
