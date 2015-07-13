@@ -34,7 +34,7 @@
 
         <meta name="google-analytics" content="UA-3769691-2">
 
-    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="480F34B9:506E:CC99C7E:559EC287" name="octolytics-dimension-request_id" />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="480F34B9:724A:48623F1:55A3CEAE" name="octolytics-dimension-request_id" />
     
     <meta content="Rails, view, blob#show" data-pjax-transient="true" name="analytics-event" />
     <meta class="js-ga-set" name="dimension1" content="Logged Out">
@@ -48,15 +48,15 @@
 
 
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="YtiTfwjrA6zhl8wIlUDMqe0nrb3QZFFs7tCiodKhmEVbhVAvNDoRnL86ABNR1yJJeqZchkjhpeNesnuAgm80aQ==" name="csrf-token" />
+<meta content="4Ih4hEnSlyEAtqKJBIVwS+N4VkFMhApBzR3Yw7y4TtJtxJCrS5pkXot5XPn36c0XMMQoTPOBn3UShtAURTLJ1g==" name="csrf-token" />
 
-    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-507b4f74c65565efec0273ea4338465df92b14c967ae71c2bda03dd97946b558.css" media="all" rel="stylesheet" />
-    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-2fbdf789628902fbbde900bfd0bfac0a84ff4cb621212947ebd095670a064df1.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-8824a5ef57ac4ae0b5ca429778b9660b1c66d09deea2ff11681de18d86a4bbb1.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-f0d033a37796c27f6b5b24aa8dc21af9c206a51ed2fe782d660dc20267c17d2b.css" media="all" rel="stylesheet" />
     
     
 
 
-    <meta http-equiv="x-pjax-version" content="3feacda906686acff0244b0efc134708">
+    <meta http-equiv="x-pjax-version" content="3f58d2288e653bc3998db56bf3ad89c7">
 
       
   <meta name="description" content="Contribute to CampaignManagerTester development by creating an account on GitHub.">
@@ -271,7 +271,7 @@
 
 
 <div class="clone-options">You can clone with
-  <form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="bnVGLWYqKtdMPFmsdcCidYwE+seuYOujD0r7XGKR0IgSNFYy+IMdx7Ja0wTQqpyJ+w3ZoE+H1JuuHCUyTdrRnw==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="0BPD6ouSjGD5aW20PqVdt3Nfw/t9vWQ6ksNo9jIC254C6rsrq6SwZgBKVn9RKRK7XSosCpU52q0gmXz9cMntAg==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+  <form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="0mV4+4Qz/zRQd5UvBkhH4ULamlWTV/T/mHnXk1Vd5U3Ax4lZeKkF0O89DOpqzNeExi2+1qSV5I4HNv+bSru6ew==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form> or <form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form " data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jau0FirHR4b6meZLU0HKAdM4yhRfRu96VP0xGaSVbOQAQJxbERHIoSM+3D+xfY7iqTLcqAVdlqdGt6r61OxTRQ==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
   <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
     <span class="octicon octicon-question"></span>
   </a>
@@ -384,37 +384,16 @@
   </div>
 </div>
 
-
-  <div class="commit file-history-tease">
-    <div class="file-history-tease-header">
-        <img alt="@lynneeai" class="avatar" height="24" src="https://avatars3.githubusercontent.com/u/11581419?v=3&amp;s=48" width="24" />
-        <span class="author"><a href="/lynneeai" rel="author">lynneeai</a></span>
-        <time datetime="2015-06-15T14:27:50Z" is="relative-time">Jun 15, 2015</time>
-        <div class="commit-title">
-            <a href="/lynneeai/CampaignManagerTester/commit/3262c6ccff043977a4d1297cd6d03e63f7b3b608" class="message" data-pjax="true" title="created repo">created repo</a>
-        </div>
-    </div>
-
-    <div class="participation">
-      <p class="quickstat">
-        <a href="#blob_contributors_box" rel="facebox">
-          <strong>1</strong>
-           contributor
-        </a>
-      </p>
-      
-    </div>
-    <div id="blob_contributors_box" style="display:none">
-      <h2 class="facebox-header">Users who have contributed to this file</h2>
-      <ul class="facebox-user-list">
-          <li class="facebox-user-list-item">
-            <img alt="@lynneeai" height="24" src="https://avatars3.githubusercontent.com/u/11581419?v=3&amp;s=48" width="24" />
-            <a href="/lynneeai">lynneeai</a>
-          </li>
-      </ul>
-    </div>
+<include-fragment class="commit commit-loader file-history-tease" src="/lynneeai/CampaignManagerTester/contributors/master/CampaignManagerTester/InterceptorTester/Test.cs">
+  <div class="file-history-tease-header">
+    Fetching contributors&hellip;
   </div>
 
+  <div class="participation">
+    <p class="loader-loading"><img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" /></p>
+    <p class="loader-error">Cannot retrieve contributors at this time</p>
+  </div>
+</include-fragment>
 <div class="file">
   <div class="file-header">
     <div class="file-actions">
@@ -880,7 +859,7 @@
       <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
 </a>
     <ul class="site-footer-links">
-      <li>&copy; 2015 <span title="0.05421s from github-fe132-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+      <li>&copy; 2015 <span title="0.07667s from github-fe134-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
         <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
@@ -923,7 +902,7 @@
 
 
       <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-3241a40a58a82e21daef3dd3cdca01bde189158793c1b6f9193fff2b5293cd1d.js"></script>
-      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-2860f5c9bedf7b1ad14ca816dcba7fdbeea0bad143ba637132a6d4db66cd1335.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-d3ef45e52a74e2511c31a0051d5dfd10b60b12a8b8a738ead962c35e11dbcc1f.js"></script>
       
       
   </body>
