@@ -10,6 +10,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
+using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace DBBuilder
 {
@@ -17,7 +19,7 @@ namespace DBBuilder
     {
         static void Main(string[] args)
         {
-            try
+			try
             {
                 //Connect to a remote instance of SQL Server.
                 SqlCredential creds = new SqlCredential(, "CozDev01_DBA!Us3rAcc0unt@zypnl8g76k", "Ecru9278Fudge");
@@ -44,6 +46,7 @@ namespace DBBuilder
             }
             //The connection is automatically disconnected when the Server variable goes out of scope
             Console.ReadLine();
+
         }
     }
 }
